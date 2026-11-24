@@ -1,0 +1,4 @@
+import type {Student,Teacher} from "../types";
+export const students:Student[]=Array.from({length:500},(_,i)=>({id:i+1,name:["Aadhavan Raj","Ananya Thomas","Arjun Kumar","Diya Maria","Ishaan Paul","Kavya S","Nathan Joseph","Riya Mathew"][i%8]+(i>7?" "+Math.floor(i/8+1):""),roll:"LC"+String(i+1).padStart(3,"0"),grade:["I","II","III","IV","V","VI","VII","VIII","IX","X"][i%10],section:i%2?"A":"B",fee:i%4?"Paid":"Due"}));
+export const teachers:Teacher[]=Array.from({length:35},(_,i)=>({id:i+1,name:["Anita Mary","Ramesh Kumar","Priya Joseph","Suresh Raj","Meena Thomas"][i%5]+(i>4?" "+(i+1):""),subject:["English","Mathematics","Science","Social Studies","Computer Science"][i%5]}));
+export const classes=["I","II","III","IV","V","VI","VII","VIII","IX","X"];
