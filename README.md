@@ -1,7 +1,23 @@
-# LittelChampions ICSE School ERP
+# LittelChampions ICSE School ERP Demo
 
-React + Vite + TypeScript school ERP demonstration.
+React + Vite + TypeScript modular frontend.
 
-Run locally: `npm install` then `npm run dev`. Build: `npm run build`.
+## Run
+```bash
+npm install
+npm run dev
+```
+Build with `npm run build`.
 
-Includes sample 500-student and 35-teacher directory, dashboard, student and staff attendance, camera selfie capture, demo fees, role switcher and browser LocalStorage persistence. Wi-Fi verification is simulated; production must verify public IP/CIDR server-side. No facial recognition or real payment processing. This is a demo, not production authentication or secure student record storage.
+## Structure
+- `src/components/layout`: Sidebar and Topbar
+- `src/components/ui`: reusable components
+- `src/pages`: dashboard, directory, attendance, fee pages and module placeholders
+- `src/data`: generated demo records
+- `src/types`: TypeScript models
+- `src/utils`: LocalStorage helper
+- `src/App.tsx`: routing and app state orchestration
+
+Demo includes 500 sample students, 35 staff, directory views, attendance registers, selfie capture kiosk, fee mock workflow, role selector, charts, and local persistence.
+
+**Limitations:** simulated network validation; camera capture is user-permission based; no biometric face recognition; mock fees only; no production authentication or backend. Do not use demo data/storage for real student information.
