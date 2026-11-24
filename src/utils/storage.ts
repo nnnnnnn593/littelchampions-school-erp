@@ -1,0 +1,2 @@
+export function readStore<T>(key:string,initial:T):T{try{return JSON.parse(localStorage.getItem(key)??"null")??initial}catch{return initial}}
+export function writeStore<T>(key:string,value:T){try{localStorage.setItem(key,JSON.stringify(value))}catch{console.warn("Local storage unavailable")}}
